@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Life Insurance Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/healthform.css" />
+    <script type="module" src="JS/onload.js"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary">
+    <div class="container-fluid">
+      <h1 class="h3 mb-0 text-white p-3">SmartInsure</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse float-end" id="navbarNav">
+        <ul id="nav-menu" class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="dashboard.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="policy.html">View Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="newpolicy.html">Buy New Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">Pricing Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="logout">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-8 align-items-center p-4" style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                <h1 class="text-center">Life Insurance Application</h1>
+                <hr>
+                <form class="container p-2">
+                    <div id="error-message" class="alert alert-danger mt-3" role="alert" style="display: none"></div>
+                    <div id="successNotify" class="alert alert-success mt-3" role="alert" style="display: none"></div>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" minlength="3" maxlength="50" required />
+                    <div id="name-error" class="text-danger" style="color: red; display: none"></div>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" max="2007-04-21" required />
+                    <div id="dob-error" class="text-danger" style="color: red; display: none"></div>
+
+                    <label for="contact">Contact Number:</label>
+                    <input type="tel" id="contact" pattern="[0-9]{10}" title="Enter a 10-digit phone number" required />
+                    <div id="contact-error" class="text-danger" style="color: red; display: none"></div>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required />
+                    <div id="email-error" class="text-danger" style="color: red; display: none"></div>
+
+                    <label for="address">Address:</label>
+                    <textarea id="address" minlength="5" maxlength="50" required></textarea>
+                    <div id="address-error" class="text-danger" style="color: red; display: none"></div>
+
+                    <label for="nominee">Nominee Name:</label>
+                    <input type="text" id="nominee" required />
+                    <div id="nominee-error" class="text-danger" style="color: red; display: none"></div>
+
+                    <label for="relationship">Relationship with Nominee:</label>
+                    <input type="text" id="relationship" required />
+                    <div id="relationship-error" class="text-danger" style="color: red; display: none"></div>
+
+                    <label for="plan">Select Plan:</label>
+                    <select id="plan" required>
+                        <option value="" disabled selected>Select a plan</option>
+                        <option value="basic">Basic</option>
+                        <option value="standard">Standard</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                    <input type="hidden" id="formType" value="LifeForm">
+                    <button class="btn btn-primary w-100 mt-3" type="button" onclick="validateHealthForm()">
+                        Submit Application
+                    </button>
+
+                    <div id="paymentInstructions" style="display: block">
+                        <p>
+                            After successful payment, please keep a copy of the transaction
+                            receipt for your records.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div style="margin: 50px;"></div>
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center fixed-bottom py-3 mt-5">
+        <p class="mb-0">&copy; 2026 SmartInsure. All rights reserved.</p>
+    </footer>
+    <script src="JS/healthform.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Hamburger Menu */
+.nav-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #007bff;
+    position: absolute;
+    top: 56px;
+    right: 20px;
+    border-radius: 4px;
+    padding: 10px;
+    width: 200px;
+    z-index: 999;
+  }
+
+  .nav-menu.nav-menu-visible {
+    display: flex;
+  }
+
+  .nav-menu a {
+    color: white;
+    padding: 8px 0;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .nav-menu a:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.card-header {
+  background-color: #007bff;
+  color: white;
+  padding: 5px;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+
+.card-body {
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.card-body p {
+  margin-bottom: 10px;
+}
+
+.card-footer {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.card-footer .btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card-footer .btn:hover {
+  background-color: #5a6268;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 15px;
+}
+
+.callout-success {
+  background-color: #e6f8ed;
+  border-left: 5px solid #28a745;
+}
+
+.callout-info {
+  background-color: #e4f1f5;
+  border-left: 5px solid #5bc0de;
+}
+
+.callout-warning {
+  background-color: #faf2e7;
+  border-left: 5px solid #f0ad4e;
+}
+
+.callout-danger {
+  background-color: #f3e2e2;
+  border-left: 5px solid #d9534f;
+}

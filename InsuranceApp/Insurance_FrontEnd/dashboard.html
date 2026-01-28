@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SmartInsure - Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="CSS/dashboard.css">
+  <script type="module" src="JS/onload.js"></script>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary">
+    <div class="container-fluid">
+      <h1 class="h3 mb-0 text-white p-3">SmartInsure</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse float-end" id="navbarNav">
+        <ul id="nav-menu" class="navbar-nav ms-auto px-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="policy.html">View Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="newpolicy.html">Buy New Policy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pricing.html">Pricing Calculator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="logout">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content Section -->
+  <main class="container mt-5">
+    <div class="dashboard-container border p-4 rounded shadow-sm bg-light">
+      <h2 class="text-center mb-4">Welcome <span id="userName"></span>,</h2>
+      <hr>
+      <p>
+        You can avail our services like :
+      <ul>
+        <li>View Your Policy Number</li>
+        <li>Submit your Claims through dashboard page</li>
+        <li>Buy New Policy</li>
+        <li>Calculate Premium Amount based on Coverage Type & Plan Type</li>
+      </ul>
+      </p>
+      <a href="claim.html" class="btn-claim">Submit Claim</a>
+    </div>
+  </main>
+  <main class="container mt-5">
+    <div class="dashboard-container border p-4 rounded shadow-sm bg-light">
+      <h2 class="text-center mb-4">Recent Claims</h2>
+      <hr>
+      <div class="container">
+        <div class="row justify-content-start p-2" id="recentClaims">
+          
+        </div>
+      </div>
+    </div>
+  </main>
+  <div style="margin: 50px;"></div>
+  <!-- Footer Section -->
+  <footer class="bg-dark text-white text-center fixed-bottom py-3">
+    <p class="mb-0">&copy; 2026 SmartInsure. All rights reserved.</p>
+  </footer>
+
+  <!-- Add Bootstrap JS Bundle -->
+  <script src="JS/dashboard.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

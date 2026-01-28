@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "username": "strnger98",
+      "password": "/5dBQVwToLPWXJlbmF62vg==:bRX+rXt6BNcf5+h7934SLOiIK55OszJuAR2EgJewYpU=",
+      "fullname": "Abhishek Soni",
+      "policyNumber": "INS-989898"
+    },
+    {
+      "username": "john",
+      "password": "K1WT4uMWRDPpcUh5xDKb5w==:efsM7r+NR0/TSj9TC7dT5cfOTQNAsU114OXr7LrFUWM=", 
+      "fullname": "John Doe",
+      "policyNumber": "INS-98765"
+    },
+    {
+      "username": "jane",
+      "password": "u5+XI2Fr2ADDGFWb/Stn0w==:8IhTVuDEf3xoO4Nw64L4wzejrhf7ygueYnIuUrsdw+0=",
+      "fullname": "Jane Smith",
+      "policyNumber": "INS-12345"
+    },
+    {
+      "username": "alice",
+      "password": "ieEYfIqEyvV9BNFYuxGZag==:fvFmTDo2vMMl4xmwShbakxqFna3QRnsAkBX3qosqXtA=",
+      "fullname": "Alice Johnson",
+      "policyNumber": "INS-54321"
+    }
+  ]
+}

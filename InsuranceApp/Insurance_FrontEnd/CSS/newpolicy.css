@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-primary {
+  background-color: #007bff;
+}
+
+
+.container {
+  margin-top: 60px; /*added this to take screenshot*/
+  /* margin: 20px auto;
+    padding: 20px; */
+  overflow-y: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.policy-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.disabledCard {
+  pointer-events: none;       /* Prevent clicks */
+  opacity: 0.5;               /* Faded look */
+  filter: grayscale(50%);    /* Optional: make it look inactive */
+  background-color: #f0f0f0;  /* Slightly dull background */
+}
+
+.card .btn {
+  /* Consistent width for all buttons */
+  margin: 10px auto;
+  /* Center the button horizontally */
+}
+
+.card h5 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn.disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  /* margin-top: 90px; */
+  margin-top: 130px;
+ 
+}
+
+/* Hamburger button - hidden on large screens */
+.nav-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive Nav Menu */
+.nav-menu {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #007bff;
+    position: absolute;
+    top: 56px;
+    /* Adjust based on header height */
+    right: 20px;
+    border-radius: 4px;
+    padding: 10px;
+    width: 200px;
+    z-index: 1000;
+  }
+
+  .nav-menu.nav-menu-visible {
+    display: flex;
+  }
+
+  .nav-menu a {
+    color: white;
+    padding: 8px 0;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .nav-menu a:last-child {
+    border-bottom: none;
+  }
+}

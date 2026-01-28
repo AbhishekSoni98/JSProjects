@@ -1,0 +1,181 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "strnger98",
+      "password": "/5dBQVwToLPWXJlbmF62vg==:bRX+rXt6BNcf5+h7934SLOiIK55OszJuAR2EgJewYpU=",
+      "fullname": "Abhishek Soni",
+      "policyNumbers": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "email": "Abhisheksoni1998@gmail.com"
+    },
+    {
+      "id": 2,
+      "username": "john",
+      "password": "K1WT4uMWRDPpcUh5xDKb5w==:efsM7r+NR0/TSj9TC7dT5cfOTQNAsU114OXr7LrFUWM=",
+      "fullname": "John Doe",
+      "policyNumbers": [
+        3
+      ],
+      "email": "John@hotmail.com"
+    },
+    {
+      "id": 3,
+      "username": "jane",
+      "password": "u5+XI2Fr2ADDGFWb/Stn0w==:8IhTVuDEf3xoO4Nw64L4wzejrhf7ygueYnIuUrsdw+0=",
+      "fullname": "Jane Smith",
+      "policyNumbers": [
+        4
+      ],
+      "email": "Jane@outlook.com"
+    },
+    {
+      "id": 4,
+      "username": "alice",
+      "password": "ieEYfIqEyvV9BNFYuxGZag==:fvFmTDo2vMMl4xmwShbakxqFna3QRnsAkBX3qosqXtA=",
+      "fullname": "Alice Johnson",
+      "policyNumbers": [
+        5
+      ],
+      "email": "alice@myorg.com"
+    },
+    {
+      "username": "test",
+      "password": "aDRvs4uZLHEiv1p6lwzVfA==:eaxJM+Q+jxz0xneOG1ltx5cmM6VErQ46xeT43hQWhg8=",
+      "fullname": "test",
+      "policyNumbers": [],
+      "email": "test@gmail.com",
+      "id": 5
+    }
+  ],
+  "policies": [
+    {
+      "id": 1,
+      "policyNumber": "INS-989898",
+      "coverageType": 1,
+      "expiryDate": "Dec 31 2050"
+    },
+    {
+      "id": 2,
+      "policyNumber": "INS-989899",
+      "coverageType": 2,
+      "expiryDate": "Dec 31 2035"
+    },
+    {
+      "id": 3,
+      "policyNumber": "INS-12345",
+      "coverageType": 2,
+      "expiryDate": "Dec 31 2025"
+    },
+    {
+      "id": 4,
+      "policyNumber": "INS-54321",
+      "coverageType": 3,
+      "expiryDate": "Dec 31 2030"
+    },
+    {
+      "id": 5,
+      "policyNumber": "INS-98765",
+      "coverageType": 1,
+      "expiryDate": "Dec 31 2025"
+    },
+    {
+      "id": 6,
+      "policyNumber": "INS-989801",
+      "coverageType": 3,
+      "expiryDate": "Dec 31 2015"
+    },
+    {
+      "id": 7,
+      "policyNumber": "INS-989802",
+      "coverageType": 3,
+      "expiryDate": ""
+    },
+    {
+      "id": 8,
+      "policyNumber": "INS-989803",
+      "coverageType": 1,
+      "expiryDate": "Dec 31 2025"
+    },
+    {
+      "policyNumber": "INS-A09",
+      "coverageType": 1,
+      "expiryDate": "",
+      "id": 9
+    },
+    {
+      "policyNumber": "INS-A010",
+      "coverageType": 1,
+      "expiryDate": "",
+      "id": 10
+    }
+  ],
+  "policyMetaData": [
+    {
+      "id": 1,
+      "policiesId": 1,
+      "fullname": "Abhishek Soni",
+      "dob": "",
+      "phone": "",
+      "email": "Abhisheksoni1998@gmail.com",
+      "address": "Triveni Nagar",
+      "nominee": "Pramila",
+      "nomineeRelationship": "mother",
+      "planType": "premium"
+    },
+    {
+      "policiesId": 9,
+      "fullname": "Abhishek",
+      "dob": "2000-03-01",
+      "phone": "2121212121",
+      "email": "test@gmail.com",
+      "address": "Triveni Nagar\n304 Royal Crystal",
+      "nominee": "Pramila",
+      "nomineeRelationship": "mother",
+      "planType": "basic",
+      "id": 2
+    },
+    {
+      "policiesId": 10,
+      "fullname": "Abhishek",
+      "dob": "2000-03-01",
+      "phone": "2121212121",
+      "email": "test@gmail.com",
+      "address": "Triveni Nagar\n304 Royal Crystal",
+      "nominee": "Pramila",
+      "nomineeRelationship": "mother",
+      "planType": "standard",
+      "id": 3
+    }
+  ],
+  "claims": [
+    {
+      "id": 1,
+      "userId": "1",
+      "reason": "Some Reason",
+      "amount": 10000,
+      "status": "Approved"
+    },
+    {
+      "id": 2,
+      "userId": "1",
+      "reason": "Some Reason",
+      "amount": 100000,
+      "status": "Rejected"
+    },
+    {
+      "reason": "Need money",
+      "amount": "10000",
+      "userId": "1",
+      "status": "Submitted",
+      "id": 3
+    }
+  ]
+}
