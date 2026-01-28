@@ -37,11 +37,21 @@ A beginner-friendly project that demonstrates core **JavaScript skills** with a 
         - Install Packages -> npm i
         - Run Server -> npm run start
 
+---
 
+## 🔑 Default Login Credentials
 
+For testing purposes, you can use the following credentials to log in:
+
+- **User ID:** `strnger98`  
+- **Password:** `12345678` 
+
+---
 
 ## Author
 
 Abhishek Soni
 
 Email: abhisheksoni1998@gmail.com
+
+---
