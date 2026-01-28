@@ -1,4 +1,6 @@
 .checked-todo {
   text-decoration: line-through;
-  color: var(--text-color-primary);
+  background-color: rgba(var(--bs-success-rgb),var(--bs-bg-opacity))!important;
+  color: black;
 }
+
