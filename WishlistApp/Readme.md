@@ -1,4 +1,4 @@
-# Quiz CLI App
+# WishList App
 A beginner-friendly app that demonstrates core **JavaScript skills**
 
 ---
